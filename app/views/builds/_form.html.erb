@@ -11,6 +11,8 @@
     </div>
   <% end %>
 
+  <%= collection_select(:character, :character_id, Character.all, :id, :name_with_initial, prompt: true) %>
+
   <div class="field">
     <%= form.label :title %>
     <%= form.text_field :title, id: :build_title %>

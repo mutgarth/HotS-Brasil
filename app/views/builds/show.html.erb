@@ -1,12 +1,17 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
+    <strong>Herói:</strong>
+    <%= Character.find(@build.character_id).name %>
+</p>
+
+<p>
+  <strong>Título:</strong>
   <%= @build.title %>
 </p>
 
 <p>
-  <strong>Description:</strong>
+  <strong>Descrição:</strong>
   <%= @build.description %>
 </p>
 

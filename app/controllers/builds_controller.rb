@@ -25,7 +25,9 @@ class BuildsController < ApplicationController
   # POST /builds.json
   def create
     @build = Build.new(build_params)
-
+    @build.user_id = current_user.id
+    @build.character_id = params[:character][:character_id]
+    
     respond_to do |format|
       if @build.save
         format.html { redirect_to @build, notice: 'Build was successfully created.' }
@@ -69,6 +71,6 @@ class BuildsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def build_params
-      params.require(:build).permit(:title, :description)
+      params.require(:build).permit(:title, :description, :character)
     end
 end
