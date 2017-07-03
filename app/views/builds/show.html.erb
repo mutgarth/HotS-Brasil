@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @build.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @build.description %>
+</p>
+
+<%= link_to 'Edit', edit_build_path(@build) %> |
+<%= link_to 'Back', builds_path %>
