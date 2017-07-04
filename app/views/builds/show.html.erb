@@ -1,19 +1,22 @@
-<p id="notice"><%= notice %></p>
+<div class="container panel panel-default text-center">
+  <p id="notice"><%= notice %></p>
 
-<p>
-    <strong>Herói:</strong>
-    <%= Character.find(@build.character_id).name %>
-</p>
+  <p>
+      <strong>Herói:</strong>
+      <%= Character.find(@build.character_id).name %>
+  </p>
 
-<p>
-  <strong>Título:</strong>
-  <%= @build.title %>
-</p>
+  <p>
+    <strong>Título:</strong>
+    <%= @build.title %>
+  </p>
 
-<p>
-  <strong>Descrição:</strong>
-  <%= @build.description %>
-</p>
+  <p>
+    <strong>Descrição:</strong>
+    <%= @build.description %>
+  </p>
 
-<%= link_to 'Edit', edit_build_path(@build) %> |
-<%= link_to 'Back', builds_path %>
+  <%= link_to 'Edit', edit_build_path(@build) %> |
+  <%= link_to 'Back', builds_path %>
+
+</div>
