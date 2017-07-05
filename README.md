@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Passo a passo para executar a aplicação em Ruby on Rails, HotS Brasil:
 
-Things you may want to cover:
+* Versão Ruby -~> 2.4.1
 
-* Ruby version
+* Dependências do sistema -~> Para que o projeto funcione, é necessária a instalação do Rails 5.1
 
-* System dependencies
+* Configurações -~> Antes abir o projeto, execute o comando 'bundle install' para que as gems necessárias sejams instaladas.
 
-* Configuration
+* Criação da base de dados -~> Para que os personagens sejam inseriros pelo 'seed' no banco de dados so site, execute os comandos 'rake db:migrate' e então 'rake db:seed', respectivamente.  
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Instruções para execução -~> Após feitas as configurações necessárias e criação da base de dados, abra um navegador e digite 'localhost:3000' na barra de navegação.
